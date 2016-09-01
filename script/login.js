@@ -134,7 +134,7 @@ var login = {};
 			login.destroy();
 		} else {
 			//Invalid password
-			login.drawNotification("failed", "Invalid login crendentials");
+			login.drawNotification("failed", "Try 12345");
 		}
 
 		$(".pass_input").val("");

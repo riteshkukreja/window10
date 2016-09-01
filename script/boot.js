@@ -4,7 +4,7 @@ bootManager.icon = "assest/white_circle_loader.gif";
 bootManager.img = "assest/logo.png";
 
 bootManager.holder;
-bootManager.container = "body";
+bootManager.container = document.body;
 
 bootManager.init = function() {
 	bootManager.drawContainer();
