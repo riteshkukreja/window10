@@ -8,7 +8,7 @@ $(function() {
 		// load login.js and lockscreen.js
 		login.init(function() {
 			lockscreen.init(function() {
-				setTimeout(bootManager.destroy, 200);
+				setTimeout(bootManager.destroy, 2000);
 			});
 		});
 });
