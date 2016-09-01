@@ -1,0 +1,28 @@
+.bootManager_holder {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background: #000;
+	z-index: 50;
+}
+
+.bootManager_details .bootManager_loading {
+	width: 40px;
+	height: 40px;
+
+	position: absolute;
+	top: calc(20% + 350px);
+	left: calc(50% - 20px);
+}
+
+.bootManager_details .bootManager_logo {
+	width: 150px;
+	height: 150px;
+
+	position: absolute;
+	top: 20%;
+	left: calc(50% - 75px);
+}

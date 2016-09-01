@@ -1,0 +1,57 @@
+.shutdown_holder {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background: #448AFF;
+
+}
+
+.shutdown_holder:before {
+	content: '';
+	display: block;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	opacity: 0;
+	background: #0966D2;
+
+	animation: bg 2s infinite alternate;
+}
+
+@keyframes bg {
+	100% {
+		opacity: 1;
+	}
+}
+
+.shutdown_holder .shutdown_details {
+	width: 200px;
+	height: 150px;
+
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 100px);
+
+	text-align: center;
+}
+
+.shutdown_details .shutdown_loading {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: auto auto;
+}
+
+.shutdown_details .shutdown_text {
+	font-size: 28px;
+	color: #FFF;
+	display: block;
+	margin-top: 30px;
+}

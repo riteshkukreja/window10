@@ -1,0 +1,75 @@
+.chrome_container {
+	position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.chrome_topbar {
+	position: absolute;
+	top: 0px;
+
+	width: 100%;
+    height: 40px;
+    background: #999;
+}
+
+.chrome_topbar > div {
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+.chrome_topbar .chrome_topbar_leftcontrols > span, .chrome_topbar .chrome_topbar_rightcontrols > span {
+	width: 20px;
+	height: 20px;
+
+	margin-left: 5px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.chrome_topbar .chrome_topbar_leftcontrols {
+	margin-bottom: 5px;
+}
+
+.chrome_topbar .chrome_topbar_leftcontrols span > img, .chrome_topbar .chrome_topbar_rightcontrols span > img {
+	width: 100%;
+	height: 100%;
+}
+
+.chrome_topbar .chrome_topbar_rightcontrols {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.chrome_topbar .chrome_topbar_address_bar {
+	width: calc(100% - 120px);
+	height: 40px;
+}
+
+.chrome_topbar .chrome_topbar_address_bar input {
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #444;
+	color: #999;
+}
+
+.chrome_topbar .chrome_topbar_address_bar input:focus {
+	color: #444;
+}
+
+iframe.chrome_website_view {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: absolute;
+    top: 40px;
+}

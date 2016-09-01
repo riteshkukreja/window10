@@ -1,0 +1,182 @@
+* {
+	overflow: hidden;
+}
+
+#window {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.bottom_bar {
+	height: 40px;
+
+	background: rgba(0, 0, 0, .7);
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.start_btn {
+	width: 40px;
+	height: 100%;
+
+	padding: 0px 5px;
+
+	position: absolute;
+	left: 0;
+}
+
+.start_btn img {
+	width: 40%;
+	height: 40%;
+
+	position: relative;
+	top: 30%;
+	left: 30%;
+}
+
+.search_btn {
+	width: 345px;
+	height: 100%;
+
+	position: absolute;
+	left: 48px;
+}
+
+
+.search_btn input {
+	width: 100%;
+	height: 100%;
+
+	box-sizing: border-box;
+
+	padding: 5px 10px;
+
+	background-color: rgba(80, 80, 80, .6);
+	color: rgba(90, 90, 90, .7);
+	border: 0;
+
+	font-size: 14px;
+	outline: none;
+
+	-webkit-transition: all 200ms ease-in;
+}
+
+.search_btn input:focus, .search_btn input:active {
+	background-color: #FFF;
+	color: #000;
+}
+
+.desktop {
+	position: absolute;
+	top: 0;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+}
+
+.desktop_icon_holder {
+	float: left;
+	width: auto;
+	height: auto;
+
+	max-height: 80%;
+	max-width: 90%;
+
+	margin: 1%;
+}
+
+.desktop_icon_holder .desktop_icon {
+	display: block;
+	width: 80px;
+	height: 80px;
+	box-sizing: border-box;
+	margin: 10px;
+}
+
+.desktop_icon img {
+	width: 50px;
+	height: 50px;
+	margin-left: calc(50% - 25px);
+	display: block;
+	margin-bottom: 5px;
+}
+
+.desktop_icon span {
+	color: #FFF;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+
+.desktop_icon:hover, .desktop_icon.highlight {
+	background-color: rgba(200, 200, 200, .4);
+}
+
+.sidebar_icon_holder {
+	position: absolute;
+	bottom: 0;
+	right: 60px;
+}
+
+.sidebar_icon_holder .sidebar_icon {
+	display: inline-block;
+}
+
+.sidebar_icon_holder {
+	margin-right: 10px;
+}
+
+.sidebar_icon {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+	margin-right: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.sidebar_icon img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.date_holder {
+	position: absolute;
+	right: 2px;
+	bottom: 0;
+	width: 70px;
+	height: 80%;
+	top: 10%;
+}
+
+.date_holder > span {
+	display: block;
+	width: 100%;
+	height: 50%;
+	font-size: 11px;
+	color: #FFF;
+	text-align: center;
+
+	font-family: arial;
+}
+
+.home_focus {
+	width: 4px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    border-left: 2px solid rgba(200, 200, 200, .4);
+}
+
+.home_focus:hover {
+	border-left: 2px solid rgba(200, 200, 200, .6);
+}

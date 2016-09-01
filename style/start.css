@@ -1,0 +1,156 @@
+.start_holder {
+	position: absolute;
+	bottom: 40px;
+	width: 900px;
+	height: 0vh;
+
+	background: rgba(0, 0, 0, .6);
+	background-image: url('../assest/bg_blur.png');
+	background-repeat: repeat-y repeat-x;
+
+	border: 1px solid #999;
+	border-bottom: 0;
+	border-left: 0;
+	box-sizing: border-box;
+	padding: 20px;
+	display: none;
+	z-index: 10;
+}
+
+.start_holder.active {
+	display: block;
+	animation: show 200ms ease-in forwards;
+}
+
+@-webkit-keyframes show {
+	80% {
+		height: 60vh;
+	}
+	100% {
+		height: 80vh;
+	}
+}
+
+.start_holder.hide {
+	display: none;
+}
+
+.start_user_holder {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	width: 200px;
+	height: 40px;
+}	
+
+/*
+	Override user image
+*/
+
+.start_user_holder .app.list .app_img_holder img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.start_most_recent_holder {
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	width: 200px;
+	height: auto;
+	padding-top: 20px;
+}
+
+.start_most_recent_holder:before {
+	content: 'Most used';
+	display: block;
+	position: absolute;
+	top: -20px;
+	width: 100%;
+	margin: 20px;
+	margin-left: 0;
+	height: 20px;
+	font-size: 12px;
+	text-align: left;
+	color: #CCC;
+}
+
+/*
+	Ovveride image holder background
+*/
+
+.start_most_recent_holder .app.list .app_img_holder {
+	background: #448AFF;
+}
+
+.start_options_holder {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	width: 200px;
+}
+
+/*
+	ovveride app icon side to make it smaller
+*/
+
+.start_options_holder .app.list .app_img_holder img {
+	width: 60%;
+	height: 60%;
+	margin-top: 20%;
+	margin-left: 20%;
+}
+
+.start_metro_holder {
+	max-width: 700px;
+	height: 60vh;
+
+	position: absolute;
+	top: 10vh;
+	left: 250px;
+}
+
+.start_metro_block {
+	max-width: 330px;
+	height: 100%;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.start_metro_block:before {
+	content: 'Life at a glance';
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	top: -20px;
+	text-align: left;
+	color: #FFF;
+}
+
+.start_all_apps_holder {
+	display: none;
+	position: absolute;
+	left: 10px;
+	width: 200px;
+	height: 78vh;
+}
+
+.start_all_apps_holder .apps_holder {
+	width: 100%;
+	height: 70vh;
+	overflow-y: auto;
+}
+
+.start_all_apps_holder .active {
+	display: block;
+}
+
+.start_all_apps_holder .hide {
+	display: none;
+}
+
+.start_holder .start_all_apps_holder .start_back {
+	position: absolute;
+	bottom: 10px;
+} 

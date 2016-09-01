@@ -1,0 +1,149 @@
+.window {
+ 	width: 600px;
+ 	height: 400px;
+
+ 	background-color: #FFF;
+ 	box-shadow: 0px 0px 2px 1px #444;
+
+ 	display: inline-block;
+ 	position: relative;
+ 	top: 0px;
+ 	left: 0px;
+
+ 	z-index: 5;
+
+ 	transition: width height 100ms ease-in;
+ 	-webkit-transition: width height 100ms ease-in;
+ }
+
+ .window.medium {
+ 	width: 600px;
+ 	height: 400px;
+
+ 	position: absolute;
+ 	top: calc(50% - 200px);
+ 	left: calc(50% - 300px);
+ }
+
+  .window.fullscreen {
+ 	width: 100%;
+ 	height: 100%;
+
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ }
+
+  .window.vertical {
+ 	width: 50%;
+ 	height: 100%;
+
+ 	position: absolute;
+ 	top: 0;
+ }
+
+ .window.front {
+ 	z-index: 10;
+ 	box-shadow: 0px 0px 2px 1px #089;
+ }
+
+ .window .top {
+ 	position: relative;
+ 	top: 0;
+ 	left: 0;
+ 	right: 0;
+
+ 	width: 100%;
+ 	height: 30px;
+ }
+
+ .top .icon {
+ 	float: left;
+
+ 	width: 20px;
+ 	height: 20px;
+
+ 	position: relative;
+ 	top: calc(50% - 10px);
+ 	left: 10px;
+ }
+
+ .top .icon img {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .top .name {
+ 	float: left;
+ 	font-size: 12px;
+ 	color: #000;
+
+ 	position: relative;
+ 	top: calc(50% - 6px);
+ 	left: 20px;
+ }
+
+ .top .min, .top .max, .top .close {
+ 	width: 40px;
+ 	height: 30px;
+
+ 	float: right;
+ 	position: relative;
+ }	
+
+ .top .min:after {
+ 	content: '__';
+ 	display: block;
+ 	width: 30px;
+ 	height: 30px;
+ 	position: absolute;
+ 	top: 5px;
+ 	left: 15px;
+ 	color: #444;
+ }
+
+ .top .max:after {
+ 	content: '';
+ 	display: block;
+ 	width: 10px;
+ 	height: 10px;
+ 	border: 1px solid #444;
+ 	border-radius: 2px;
+ 	position: absolute;
+ 	top: 10px;
+ 	left: 15px;
+ 	color: #444;
+ }
+
+ .top .close:after {
+ 	content: 'X';
+ 	display: block;
+ 	width: 30px;
+ 	height: 30px;
+
+ 	position: absolute;
+ 	top: 5px;
+ 	left: 15px;
+ 	color: #444;
+ }
+
+ .top .min:hover, .top .max:hover {
+ 	background-color: rgba(0, 0, 0, .1);
+ }
+
+ .top .close:hover {
+ 	color: #FFF;
+ 	background-color: #F44;
+ }
+
+ .window .body {
+ 	position: relative;
+ 	top: 0px;
+ 	left: 0;
+ 	right: 0;
+
+ 	width: 100%;
+ 	height: calc(100% - 30px);
+ }
+
+ /* Remove resize image */
