@@ -92,6 +92,7 @@ appManager.ALLAPPS = [
 		appid: 2,
 		style: appManager.LIST,
 		class: 'all_apps',
+		obj: new explorer(),
 		windowStyle: task.MEDIUMSIZE
 	}
 ];
@@ -128,6 +129,7 @@ appManager.MOSTUSEDAPPS = [
 		appid: 4,
 		style: appManager.LIST,
 		class: 'start_most_used',
+		obj: new explorer(),
 		windowStyle: task.MEDIUMSIZE
 	},
 	{
@@ -185,6 +187,7 @@ appManager.PINNEDAPPS = [
 		appid: 4,
 		active: false,
 		style: appManager.PINNED,
+		obj: new explorer(),
 		windowStyle: task.MEDIUMSIZE
 	},
 	{
@@ -194,6 +197,7 @@ appManager.PINNEDAPPS = [
 		active: false,
 		obj: new chrome(),
 		style: appManager.PINNED,
+		obj: new chrome(),
 		windowStyle: task.MEDIUMSIZE
 	}
 ];
@@ -204,6 +208,7 @@ appManager.DESKTOPAPPS = [
 		name: 'This PC',
 		appid: 1,
 		style: appManager.DESKTOP,
+		obj: new explorer(),
 		windowStyle: task.MEDIUMSIZE
 	},
 	{
@@ -212,6 +217,7 @@ appManager.DESKTOPAPPS = [
 		img_selected: 'assest/recycle_bin_full.png',
 		appid: 2,
 		style: appManager.DESKTOP,
+		obj: new explorer(),
 		windowStyle: task.MEDIUMSIZE
 	}
 ];
