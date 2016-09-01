@@ -1,6 +1,6 @@
 var bootManager = {};
 
-bootManager.icon = "assest/white_circle_loader.gif";
+bootManager.icon = "assest/white_circle_loader.GIF";
 bootManager.img = "assest/logo.png";
 
 bootManager.holder;
